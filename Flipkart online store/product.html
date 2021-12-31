@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  	<title>Product</title>
+  </head>
+  <style>
+    body {
+      margin: 0px;
+    }
+
+    .main {
+      height: 50px;
+    }
+
+    .navbar {
+      height: 50px;
+      background-color: #2874f0;
+      display: flex;
+      padding-left: 300px;
+      padding-right: 300px;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .flipkart_logo {
+      width: 100px;
+    }
+
+    .search_logo {
+      width: 22px;
+    }
+    input {
+      width: 500px;
+      height: 25px;
+
+      border: solid 1px white;
+    }
+    .navbar_rhs {
+      display: flex;
+      gap: 20px;
+
+      color: white;
+      font-size: 16px;
+      font-weight: 500;
+      padding-left: 200px;
+    }
+
+    .search_btn {
+      background-color: white;
+      border: solid 1px white;
+      width:29px;
+      height:29px;
+    }
+
+    .search {
+      display: flex;
+      align-items: center;
+      border: solid 1px black;   
+    }
+
+    .products{
+
+        display: grid;
+        grid-template-columns: 350px 350px 350px 350px;
+        justify-content: end;
+    }
+
+    #product-img{
+
+        width:215px;
+
+    }
+
+    h1{
+
+        text-align: center;
+        margin-top: 80px;
+        margin-bottom: 80px;
+
+    }
+
+    #product-rating{
+
+        background-color:green;
+        color: white;
+        width:30px;
+        border: solid 1px green;
+    }
+    .product_details
+    {
+    	display: flex;
+    	height:567px;
+    	margin-left: 300px;
+    	margin-right: 300px;
+    	margin-top: 60px;
+    }
+    .product_lhs
+    {
+    	height:567px;
+    	width:500px;
+    }
+    .product_rhs
+    {
+    	height:567px;
+    	width: 500px; 	
+    	margin-left: 15px; 
+    }
+    .buy_buttons
+    {
+    	display: flex;
+    	height: 40px;
+    	margin-top:12px;
+    	margin-top: 10px;
+    }
+    .add
+    {
+    	width: 50%;
+    	font-size:150%;
+    	color: white;
+    	border:red;
+    	border-radius: 10px;
+    	background-color: #f8c10a ;
+    }
+    .buy
+    {
+    	width: 50%;
+    	font-size:150%;
+    	color: white;
+    	border:none;
+    	border-radius: 10px;
+    	background-color: #e680fa ;
+    	margin-left:10px;
+    }
+
+    .product_image
+    {
+    	display: flex;
+    	align-items: center;
+    	flex-direction: column;
+    }
+    .Pro-Des
+    {
+    	font-size:20px;
+    	font-weight: bold;
+    }
+    .drop
+    {
+    	color:white;
+    	border:none;
+    	font-size: 15px;
+    	background-color:#2874f0; 
+    }
+    .navCart
+    {
+    	color:white;
+    	border:none;
+    	font-size: 15px;
+    	background-color:#2874f0; 	
+    }
+    .dropdown-content 
+    {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+    .dropdown
+    {
+        width: 90px;
+    }
+    .dropbtn 
+    {
+      background-color: #2874f0;
+      color: white;  
+      font-size: 15px;
+      border: none;
+    }
+    .dropdown-content a 
+    {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    .dropdown-content a:hover {background-color: #ddd;}
+
+    .dropdown:hover .dropdown-content {display: block;}
+
+    .dropdown:hover .dropbtn {background-color: #3e8e41;}
+  </style>
+  <body>
+    <div class="main">
+      <div class="navbar">
+        <div class="logo">
+          <img
+            class="flipkart_logo"
+            src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/flipkart-plus_8d85f4.png"
+            alt=""
+          />
+        </div>
+
+        <div class="search">
+          <input type="text" placeholder="Search for Products, Brands and more" />
+
+          <button class="search_btn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope yt-icon"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" class="style-scope yt-icon"/></g>
+            </svg>
+          </button>
+        </div>
+
+        <div class="navbar_rhs">
+          	<div class="dropdown">
+              <button class="dropbtn">My Account</button>
+              <div class="dropdown-content">
+                <a href="https://www.flipkart.com/account/?rd=0&link=home_account" target="_blank">My profile</a><br>
+                <a href="https://www.flipkart.com/account/orders?link=home_orders" target="_blank">Orders</a><br>
+                <a href="https://www.flipkart.com/wishlist?link=home_wishlist" target="_blank">Wishlist</a><br>
+                <a href="https://www.flipkart.com/my-chats?link=home_chat" target="_blank">My Chats</a><br>
+                <a href="https://www.flipkart.com/account/rewards?link=home_rewards" target="_blank">Coupons</a><br>
+                <a href="https://www.flipkart.com/notifications?otracker=Notifications_view_all" target="_blank">Notifications</a><br>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">More</button>
+              <div class="dropdown-content">
+                <a href="https://www.flipkart.com/communication-preferences/push?t=all" target="_blank">Notification Preferences</a><br>
+                <a href="https://seller.flipkart.com/sell-online/?utm_source=flipkart&utm_medium=website&utm_campaign=sellbutton" target="_blank">Sell on Flipkart</a><br>
+                <a href="https://www.flipkart.com/helpcentre" target="_blank">24x7 customer care</a><br>
+                <a href="https://advertising.flipkart.com/login?returl=/?otracker=ch_vn_advertise_header" target="_blank">Advertise</a><br>
+                <a href="https://www.flipkart.com/mobile-apps?otracker=ch_vn_mobile_apps" target="_blank">Download App</a>
+              </div>
+            </div>
+            <button onclick="Cart()" class="navCart">Cart</button>
+        </div>
+        </div>
+     
+
+        </div>
+      </div>
+      <div class="product_details">
+      	<div class="product_lhs">
+      	<div class="product_image"></div>
+      	<div class="buy_buttons">
+      		<button onclick="AddCart()" class="add">Add to Cart</button>
+      		<button onclick="buyProduct()" class="buy">Buy Now</button>
+      	</div>
+      	</div>
+      
+
+
+      <div class="product_rhs">
+      	<div class="product_info"></div>
+      	<div class="offers">
+      		<h3>Available offers</h3>
+                    <p><b>Bank Offer</b> 10% off on ICICI Bank Credit Cards, up to ₹750. On orders of ₹5000 and aboveT&C</p>
+                    <p><b>Bank Offer</b> 10% off on ICICI Bank Debit Cards, up to ₹500. On orders of ₹5000 and aboveT&C</p>
+                    <p><b>Special Price</b> Get extra ₹473 off (price inclusive of discount)T&C</p>
+      	</div>
+      	<div class="description">
+      		<div class="Pro-Des">Description</div>
+      		Galaxy A22 , the new awesome A series device comes with a 48MP OIS (Optical Image stabilisation) Quad Camera
+            that provides sharp and steady pictures and videos evertime you shoot, segment best HD+ SuperAMOLED 90Hz
+            display with 600 Nits High Brightness mode for a bright, clear and smooth viewing experience be it while
+            watching your favorite movies, scrolling on social media or gaming. It also sports a long lasting 5000 mAh
+            battery with fast charging. Galaxy A22 comes with the latest OneUI 3.1 on Android 11 out of the box packed
+            with defence grade Knox security, and Samsung Pay (NFC) for simple, secure payments right from your phone.
+
+      	</div>
+      </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script>
+	var product=JSON.parse(localStorage.getItem("clicked_product"))
+	console.log('product:',product)
+
+	var image_div=document.querySelector(".product_image")
+
+	var img=document.createElement('img')
+	img.src=product.img
+	img.id='product-img'
+	image_div.append(img)
+
+	var product_info=document.querySelector('.product_info')
+
+	var title=document.createElement('p')
+	title.innerText=product.name
+
+	title.id='product-title'
+
+	var rating=document.createElement('p')
+	rating.innerText=product.rating
+	rating.id='product-rating'
+
+	var price=document.createElement('p')
+	price.innerText=product.price
+	price.id='product-price'
+
+
+
+	product_info.append(title, rating, price)
+
+ 	function buyProduct()
+ 	{
+ 		alert('Thank you for shopping, Item will be delivered to you soon !')
+ 	}
+
+ 	function AddCart()
+ 	{
+ 		alert('Your Item is added to your cart!')
+ 	}
+ 	function Cart()
+ 	{
+ 		alert('Oops! No product available in your cart!')
+ 	}
+
+</script>

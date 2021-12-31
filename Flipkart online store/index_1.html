@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Flipkart | Shop now</title>
+  </head>
+  <style>
+    body 
+    {
+      margin: 0px;
+      background-color:#98f0e1 
+    }
+    .main 
+    {
+      height: 50px;
+    }
+    .navbar 
+    {
+      height: 50px;
+      background-color: #2874f0;
+      display: flex;
+      padding-left: 300px;
+      padding-right: 300px;
+      align-items: center;
+      gap: 20px;
+    }
+    .flipkart_logo 
+    {
+      width: 100px;
+    }
+    .search_logo 
+    {
+      width: 22px;
+    }
+    input 
+    {
+      width: 500px;
+      height: 25px;
+      border: solid 1px white;
+    }
+    .navbar_rhs 
+    {
+      display: flex;
+      gap: 20px;
+      color: white;
+      font-size: 16px;
+      font-weight: 500;
+      padding-left: 200px;
+    }
+
+    .search_btn 
+    {
+      background-color: white;
+      border: solid 1px white;
+      width:29px;
+      height:29px;
+    }
+
+    .search 
+    {
+      display: flex;
+      align-items: center;
+      border: solid 1px black;   
+    }
+    .products
+    {
+        display: grid;
+        grid-template-columns: 420px 420px 420px;
+        justify-content: end;
+    }
+    #product-img
+    {
+        width:250px;
+        border-radius:28px;
+        margin-top: 60px;
+    }
+    .h1
+    {
+        text-align: center;
+        margin-top: 50px;
+        font-size: 50px;
+        font-weight:500;
+        margin-bottom:10px;
+    }
+    .mobile
+    {
+        width:100%;
+        height: 120px;
+        margin-bottom: 20px;     
+    }
+    #product-rating
+    {
+        background-color:green;
+        color: white;
+        border: solid 1px green;
+    }
+    .drop
+    {
+      color:white;
+      border:none;
+      font-size: 15px;
+      background-color:#2874f0; 
+    }
+    .navCart
+    {
+      color:white;
+      border:none;
+      font-size: 15px;
+      background-color:#2874f0;   
+    }
+    .dropdown-content 
+    {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+    .dropdown
+    {
+        width: 90px;
+    }
+    .dropbtn 
+    {
+      background-color: #2874f0;
+      color: white;  
+      font-size: 15px;
+      border: none;
+    }
+    .dropdown-content a 
+    {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    .dropdown-content a:hover {background-color: #ddd;}
+
+    .dropdown:hover .dropdown-content {display: block;}
+
+    .dropdown:hover .dropbtn {background-color: #3e8e41;}
+  </style>
+  <body>
+    <div class="main">
+      <div class="navbar">
+        <div class="logo">
+          <img
+            class="flipkart_logo"
+            src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/flipkart-plus_8d85f4.png"
+            alt=""
+          />
+        </div>
+        <div class="search">
+          <input type="text" placeholder="Search for Products, Brands and more" />
+          <button class="search_btn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope yt-icon"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" class="style-scope yt-icon"/></g>
+            </svg>
+          </button>
+        </div>
+        <div class="navbar_rhs">
+          <div class="dropdown">
+              <button class="dropbtn">My Account</button>
+              <div class="dropdown-content">
+                <a href="https://www.flipkart.com/account/?rd=0&link=home_account" target="_blank">My profile</a><br>
+                <a href="https://www.flipkart.com/account/orders?link=home_orders" target="_blank">Orders</a><br>
+                <a href="https://www.flipkart.com/wishlist?link=home_wishlist" target="_blank">Wishlist</a><br>
+                <a href="https://www.flipkart.com/my-chats?link=home_chat" target="_blank">My Chats</a><br>
+                <a href="https://www.flipkart.com/account/rewards?link=home_rewards" target="_blank">Coupons</a><br>
+                <a href="https://www.flipkart.com/notifications?otracker=Notifications_view_all" target="_blank">Notifications</a><br>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">More</button>
+              <div class="dropdown-content">
+                <a href="https://www.flipkart.com/communication-preferences/push?t=all" target="_blank">Notification Preferences</a><br>
+                <a href="https://seller.flipkart.com/sell-online/?utm_source=flipkart&utm_medium=website&utm_campaign=sellbutton" target="_blank">Sell on Flipkart</a><br>
+                <a href="https://www.flipkart.com/helpcentre" target="_blank">24x7 customer care</a><br>
+                <a href="https://advertising.flipkart.com/login?returl=/?otracker=ch_vn_advertise_header" target="_blank">Advertise</a><br>
+                <a href="https://www.flipkart.com/mobile-apps?otracker=ch_vn_mobile_apps" target="_blank">Download App</a>
+              </div>
+            </div>
+          <button onclick="Cart()" class="navCart">Cart</button>
+        </div>
+        </div>
+        <div class="h1">Shop Products</div>
+        <div>
+          <img class="mobile" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrsFPq77nXjW0tq3KnGIxj9n98v5pIdYr4Nw&usqp=CAU">
+        </div>
+        <div class="products">
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script>
+  var products = [
+    {
+      name: "realme C20 (Cool Blue, 32 GB) (2 GB RAM)",
+      img: "https://rukminim1.flixcart.com/image/832/832/kn7sdjk0/mobile/w/h/q/c20-rmx3063-realme-original-imagfxfzay72jqvh.jpeg?q=70",
+      price: "₹ 69,999",
+      rating: "4.3",
+    },
+    {
+      name: "realme Narzo 30 (Racing Silver, 64 GB) (4 GB RAM)",
+      img: "https://rukminim1.flixcart.com/image/832/832/kq18n0w0/mobile/u/w/b/narzo-30-rmx2156-realme-original-imag45ymfpry9ecq.jpeg?q=70",
+      price: "₹ 12,499",
+      rating: "4.9",
+    },
+    {
+      name: "OPPO Reno6 5G (Aurora, 128 GB) (8 GB RAM)",
+      img: "https://rukminim1.flixcart.com/image/832/832/kr2e3680/mobile/b/q/v/reno6-5g-cph2251-oppo-original-imag4xp73qsqrtnt.jpeg?q=70",
+      price: "₹ 29,990",
+      rating: "4.1",
+    },
+    {
+      name: "SAMSUNG Galaxy F41 (Fusion Blue, 128 GB) (6 GB RAM)",
+      img: "https://rukminim1.flixcart.com/image/832/832/kfzq8i80/mobile/y/j/f/samsung-galaxy-f41-sm-f415fzbdins-original-imafwbnpdafmeuj6.jpeg?q=70",
+      price: "₹ 19,990",
+      rating: "4.2",
+    },
+    {
+      name: "OPPO Reno6 5G (Aurora, 128 GB) (8 GB RAM)",
+      img: "https://rukminim1.flixcart.com/image/832/832/kg8avm80/mobile/y/7/n/apple-iphone-12-dummyapplefsn-original-imafwg8dqq7z8cgh.jpeg?q=70",
+      price: "₹ 29,990",
+      rating: "4.3",
+    },
+    {
+      name: "APPLE iPhone 12 (Blue, 128 GB)",
+      img: "https://rukminim1.flixcart.com/image/832/832/kr2e3680/mobile/b/q/v/reno6-5g-cph2251-oppo-original-imag4xp73qsqrtnt.jpeg?q=70",
+      price: "₹ 72,990",
+      rating: "4.5",
+    },
+    {
+      name: "vivo Y51A (Crystal Symphony, 128 GB) (8 GB RAM)",
+      img: "https://rukminim1.flixcart.com/image/832/832/kk1h5e80/mobile/3/7/u/vivo-y51a-v2031-original-imafzh2ud9t3wsm7.jpeg?q=70",
+      price: "₹ 17,990",
+      rating: "4.4",
+    },
+    {
+      name: "REDMI 9 Power (Electric Green, 64 GB)  (4 GB RAM)",
+      img: "https://rukminim1.flixcart.com/image/416/416/kj0bp8w0-0/mobile/p/n/c/9-power-mobhqab5-redmi-original-imafyz7aqsrggzgh.jpeg?q=70",
+      price: "₹ 10,999",
+      rating: "4.7",
+    },
+    {
+      name: "IQOO 3 (Quantum Silver, 256 GB)  (8 GB RAM)",
+      img: "https://rukminim1.flixcart.com/image/416/416/kjvrdzk0/mobile/k/k/r/iqoo-3-i1927-original-imafzcqszgwhrgvr.jpeg?q=70",
+      price: "₹ 37,990",
+      rating: "4.5",
+    },
+    {
+      name: "SAMSUNG S20 FE 5G (Cloud Navy, 128 GB) ",
+      img: "https://rukminim1.flixcart.com/image/416/416/kq43iq80/mobile/b/t/n/s20-fe-5g-sm-g781b-ds-samsung-original-imag47fdfgmg2gnh.jpeg?q=70",
+      price: "₹ 56,990",
+      rating: "4.8",
+    },
+     {
+      name: "Infinix Hot 10 Play (7° Purple, 64 GB)  (4 GB RAM)",
+      img: "https://rukminim1.flixcart.com/image/416/416/knm2s280/mobile/c/n/a/hot-10-play-x688b-infinix-original-imag29hfg6vspbuz.jpeg?q=70",
+      price: "₹ 8,999",
+      rating: "4.3",
+    },
+    {
+      name: "Mi 11 Lite (Tuscany Coral, 128 GB)  (6 GB RAM)",
+      img: "https://rukminim1.flixcart.com/image/416/416/kq6yefk0/mobile/a/2/2/11-lite-m2101k9ai-mi-original-imag496g7nhdabwq.jpeg?q=70",
+      price: "₹ 21,999",
+      rating: "4.2",
+    },
+  ];
+
+  var products_div = document.querySelector('.products')
+
+  for (let i = 0; i < products.length; i++) 
+  { 
+    var div = document.createElement("div");
+
+    var img = document.createElement("img");
+
+    img.src = products[i].img
+
+    img.id = "product-img"
+
+
+    var title = document.createElement('p')
+
+    title.innerText = products[i].name
+
+
+    var rating = document.createElement('button')
+
+    rating.innerText=products[i].rating
+
+    rating.id = "product-rating"
+
+
+    var price = document.createElement('p')
+
+    price.innerText = products[i].price
+
+    div.onclick=function()
+    {
+      showProduct(products[i])
+    }
+
+
+    div.append(img, title, rating, price)
+
+    products_div.append(div)
+
+  }
+
+  function showProduct(product)
+  {
+    console.log('product:',product)
+
+    localStorage.setItem("clicked_product",JSON.stringify(product))
+
+    window.location.href='product.html'
+  }
+
+  function Cart()
+  {
+    alert('Oops! No product available in your cart!')
+  }
+  
+  function myFunction() 
+  {
+    var x = document.getElementById("myImg").src;
+    document.getElementById("demo").innerHTML = x;
+  }
+  
+</script>
